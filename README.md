@@ -4,10 +4,14 @@ This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next
 
 First, run the development server:
 1.) Clone the repo using GitHub Clone command
-           git clone https://github.com/Aditya-Nagpal/Hexleap
+           git clone https://github.com/Aditya-Nagpal/Hexleap 
+           
 2.) Open the cloned repo. You are already in the root directory.
+
 3.) Run 'npm install' to install all the required dependencies. 
+
 4.) Run command 'npm run dev'.
+
 5.) Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
 You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
