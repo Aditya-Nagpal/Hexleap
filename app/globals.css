@@ -2,32 +2,86 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
-}
+@layer utilities{
+    body {
+        /* background: linear-gradient(180deg, #F9F8FF 0%, #F3F9FF 100%);  */
+    }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
-}
+    body > *{
+        @apply mx-auto overflow-x-hidden;
+    }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
-}
+    .sports-cards-container > * {
+        @apply h-auto;
+        width: 229px;
+        padding: 8px;
+        -webkit-box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.05);
+        -moz-box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.05);
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.05);
+    }
 
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
-  }
+    .sports-cards-container > * div:first-child{
+        height: 90%;
+    }
+
+    .sports-cards-container > * div ul{
+        background-color: #F7F7F8;
+        display: flex;
+        @apply py-2 px-4;
+    }
+
+    .sports-cards-container > * div ul li{
+        @apply w-1/2;
+    }
+
+    .sports-cards-container > * div ul li p:first-child{
+        @apply text-xs font-normal;
+        color: #525965;
+    }
+
+    .sports-cards-container > * div ul li p:nth-child(2){
+        @apply text-sm font-medium;
+    }
+
+    #see-more-button{
+        background-color: #2C9CF0;
+    }
+
+    .advertisement > div{
+        @apply h-full !important;
+        border: 0.5px solid #006555
+    }
+
+    .shift-button{
+        @apply h-12 w-9;
+    }
+
+    .shift-button span{
+        color: #2C9CF0;
+    }
+
+    .cs-card{
+        @apply bg-white;
+        max-width: 250px;
+        -webkit-box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.05);
+        -moz-box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.05);
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.05);
+    }
+
+    .cs-card > div {
+        @apply pt-1.5;
+    }
+
+    .cs-card div:nth-child(2){
+        @apply p-1.5 pt-0 text-center;
+    }
+
+    .cs-card div:nth-child(2) p{
+        @apply mb-3;
+    }
+
+    .cs-card button{
+        background-color: #1D1D1F;
+        @apply text-white text-sm font-medium px-7 py-2 mb-4;
+    }
 }
