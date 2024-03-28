@@ -6,6 +6,7 @@ Vercel Deployment: https://hexleap-llagsepxh-aditya-nagpal.vercel.app/
 
 First, run the development server:
 1.) Clone the repo using GitHub Clone command
+
            git clone https://github.com/Aditya-Nagpal/Hexleap 
            
 2.) Open the cloned repo. You are already in the root directory.
