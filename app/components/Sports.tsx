@@ -15,7 +15,7 @@ export default function Sports() {
 
         <div>
           <div className='max-h-96'>
-            <Image src={SRC1} alt='Sacremento River Cats' fill className='h-full w-full' />
+            <Image src={SRC1} alt='Sacremento River Cats' className='h-full w-full' />
           </div>
           <div className='pt-2'>
             <p className='text-base font-medium pb-4'>Sacremento River Cats</p>
@@ -34,7 +34,7 @@ export default function Sports() {
 
         <div>
           <div className='max-h-96'>
-            <Image src={LVA1} alt='Sacremento River Cats' fill className='h-full w-full' />
+            <Image src={LVA1} alt='Sacremento River Cats' className='h-full w-full' />
           </div>
           <div className='pt-2'>
             <p className='text-base font-medium pb-4'>Las Vegas Aviatars</p>
@@ -53,7 +53,7 @@ export default function Sports() {
 
         <div>
           <div className='max-h-96'>
-            <Image src={NJD1} alt='Sacremento River Cats' fill className='h-full w-full' />
+            <Image src={NJD1} alt='Sacremento River Cats' className='h-full w-full' />
           </div>
           <div className='pt-2'>
             <p className='text-base font-medium pb-4'>New Jersey Devils</p>
@@ -72,7 +72,7 @@ export default function Sports() {
 
         <div>
           <div className='max-h-96'>
-            <Image src={LVA1} alt='Sacremento River Cats' fill className='h-full w-full' />
+            <Image src={LVA1} alt='Sacremento River Cats' className='h-full w-full' />
           </div>
           <div className='pt-2'>
             <p className='text-base font-medium pb-4'>Las Vegas Aviatars</p>
@@ -93,7 +93,7 @@ export default function Sports() {
             <div>
               <div className='relative'>
                 <span className='absolute right-0 text-xs leading-5 text-white bg-black font-bold px-4 py-1'>Ad</span>
-                <Image src={AD} alt='Sacremento River Cats' fill className='h-full w-full' />
+                <Image src={AD} alt='Sacremento River Cats' className='h-full w-full' />
               </div>
               <div className='px-2 py-4'>
                 <p className='font-semibold text-xl mb-2'>Advertisement title</p>

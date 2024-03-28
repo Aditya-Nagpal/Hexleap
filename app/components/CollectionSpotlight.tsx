@@ -17,7 +17,7 @@ export default function CollectionSpotlight() {
         <div className='flex justify-between w-4/6'>
           <div className='cs-card flex flex-col items-center'>
             <div>
-                <Image src={LVA2} alt="Las Vegas Aviators" fill /> 
+                <Image src={LVA2} alt="Las Vegas Aviators" /> 
             </div>
             <div>
               <div>
@@ -31,7 +31,7 @@ export default function CollectionSpotlight() {
 
           <div className='cs-card flex flex-col items-center'>
             <div>
-                <Image src={SRC2} alt="Sacremento River Cats" fill /> 
+                <Image src={SRC2} alt="Sacremento River Cats" /> 
             </div>
             <div>
               <div>
@@ -45,7 +45,7 @@ export default function CollectionSpotlight() {
 
           <div className='cs-card flex flex-col items-center'>
             <div>
-                <Image src={LVA2} alt="Las Vegas Aviators" fill /> 
+                <Image src={LVA2} alt="Las Vegas Aviators" /> 
             </div>
             <div>
               <div>
