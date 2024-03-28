@@ -11,7 +11,7 @@ export default function Sports() {
       <div>
         <h2 className='text-2xl font-bold w-fit border-b-4 border-b-blue-400'>Sports</h2>
       </div>
-      <div className='flex justify-between sports-cards-container mt-6 mb-12'>
+      <div className='sports-cards-container flex flex-wrap justify-between mt-6 mb-12'>
 
         <div>
           <div className='max-h-96'>
@@ -91,13 +91,13 @@ export default function Sports() {
 
         <div className='advertisement'>
             <div>
-              <div className='max-h-48 relative'>
+              <div className='relative'>
                 <span className='absolute right-0 text-xs leading-5 text-white bg-black font-bold px-4 py-1'>Ad</span>
                 <Image layout='string' src={AD} alt='Sacremento River Cats' className='h-full w-full' />
               </div>
               <div className='px-2 py-4'>
                 <p className='font-semibold text-xl mb-2'>Advertisement title</p>
-                <p className='font-normal text-sm'>
+                <p className='font-normal text-sm dark:sub-text-label'>
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
                 </p>

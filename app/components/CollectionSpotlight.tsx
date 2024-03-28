@@ -1,20 +1,20 @@
 import Image from 'next/image'
 import React from 'react'
-import LVA2 from '../Assets/Images/LVA2.jpg'
-import SRC2 from '../Assets/Images/SRC2.jpg'
+import LVA2 from '../Assets/Images/LVA2.png'
+import SRC2 from '../Assets/Images/SRC2.png'
 
 export default function CollectionSpotlight() {
   return (
-    <main className='w-4/5 flex flex-col items-center mb-12 '>
-      <h1 className='font-bold text-5xl mb-6'>Collection Spotlight</h1>
+    <main className='cs-container w-4/5 flex flex-col items-center mb-12 dark:cs-container-dark py-12'>
+      <h1 className='font-bold text-5xl text-center mb-6'>Collection Spotlight</h1>
       <p className='font-normal text-sm leading-6 text-center w-3/4 mb-12'>Discover extraordinary moments with our Spotlight Collection metatickets—exclusive access to premium events for an unforgettable experience. Grab yours today!</p>
       <div className='w-full flex items-center justify-between'>
 
-        <div className='shift-button'>
+        <div className='shift-button ml-10'>
           <span className="material-symbols-outlined">arrow_back_ios</span>
         </div>
 
-        <div className='flex justify-around w-4/6'>
+        <div className='flex justify-between w-4/6'>
           <div className='cs-card flex flex-col items-center'>
             <div>
                 <Image layout='string' src={LVA2} alt="Las Vegas Aviators"/> 
@@ -58,7 +58,7 @@ export default function CollectionSpotlight() {
           </div>
         </div>
 
-        <div className='shift-button'>
+        <div className='shift-button mr-10'>
           <span className="material-symbols-outlined">arrow_forward_ios</span>
         </div>
 

@@ -3,16 +3,25 @@
 @tailwind utilities;
 
 @layer utilities{
-    body {
-        /* background: linear-gradient(180deg, #F9F8FF 0%, #F3F9FF 100%);  */
+    .bg-dark-body{
+        background-color: #292B32;
     }
 
-    body > *{
-        @apply mx-auto overflow-x-hidden;
+    .sports-card-bg-dark{
+        background-color: #3B3E47;
+    }
+
+    .dark-sub-text{
+        color: #DFDFDF;
+    }
+
+    body{
+        background-color: #F7F7F8;
+        @apply dark:bg-dark-body overflow-x-hidden flex flex-col items-center;
     }
 
     .sports-cards-container > * {
-        @apply h-auto;
+        @apply bg-white h-auto dark:sports-card-bg-dark overflow-hidden mb-10;
         width: 229px;
         padding: 8px;
         -webkit-box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.05);
@@ -20,14 +29,18 @@
         box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.05);
     }
 
-    .sports-cards-container > * div:first-child{
-        height: 90%;
+    .sub-text-label{
+        color: #DFDFDF;
+    }
+
+    .sports-card-ul-bg-dark{
+        background-color: #292B32;
     }
 
     .sports-cards-container > * div ul{
         background-color: #F7F7F8;
         display: flex;
-        @apply py-2 px-4;
+        @apply py-2 px-4 dark:sports-card-ul-bg-dark;
     }
 
     .sports-cards-container > * div ul li{
@@ -35,7 +48,7 @@
     }
 
     .sports-cards-container > * div ul li p:first-child{
-        @apply text-xs font-normal;
+        @apply text-xs font-normal dark:sub-text-label;
         color: #525965;
     }
 
@@ -53,19 +66,27 @@
     }
 
     .shift-button{
-        @apply h-12 w-9;
+        @apply h-12 w-9 flex justify-center;
     }
 
     .shift-button span{
         color: #2C9CF0;
     }
 
+    .cs-container{
+        background: linear-gradient(180deg, #F9F8FF 0%, #F3F9FF 100%);
+    }
+
     .cs-card{
-        @apply bg-white;
+        @apply bg-white dark:cs-card-bg-dark mb-12;
         max-width: 250px;
         -webkit-box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.05);
         -moz-box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.05);
         box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.05);
+    }
+
+    .cs-card-bg-dark{
+        background-color: #818A97;
     }
 
     .cs-card > div {
@@ -80,8 +101,32 @@
         @apply mb-3;
     }
 
+    .cs-card div:nth-child(2) p:nth-child(3){
+        color: #DFDFDF;
+    }
+
     .cs-card button{
         background-color: #1D1D1F;
         @apply text-white text-sm font-medium px-7 py-2 mb-4;
+    }
+
+    .cs-container-dark{
+        background: linear-gradient(180deg, #18282A 0%, #221A2C 100%);
+    }
+
+    @media screen and (max-width: 1432px){
+        .sports-cards-container{
+            @apply justify-around;
+        }
+    }
+
+    @media screen and (max-width: 1237px){
+        .sports-cards-container{
+            @apply justify-around;
+        }
+
+        .cs-container div:nth-child(3) div:nth-child(2){
+            @apply flex-col items-center;
+        }
     }
 }
